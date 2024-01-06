@@ -1,0 +1,130 @@
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(erwan-hesry-uJ-OO3aZsSQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: contrast(100%) brightness(20%) ;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px 50px 0px 0px;
+    direction: rtl;
+}
+
+nav ul li {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+nav ul li:hover {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.258);
+    transition: background .3s ease;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight:400;
+    font-size: 1.2rem;
+}
+
+
+section {
+    margin: 110px 70px 0px 60px;
+    font-size: 5rem;
+    text-align: center;
+    color: #ffffff;
+    direction: ltr;
+    
+    
+}
+
+
+.button {
+    --bg: #00000061;
+    --hover-bg: #ffa04d18;
+    --hover-text: #ffffff;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+  
+  .button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+    border-radius: 39px;
+  }
+  
+
+  .button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+  
+  
+
+  @media screen and (max-width: 600px) {
+
+    
+
+    .back{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(dean-ricciardi-yUDldIrqW5E-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        filter: contrast(100%) brightness(20%) ;
+    }
+
+    section {
+        margin: 190px 70px 0px 60px;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+
+  }
